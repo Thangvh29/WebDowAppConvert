@@ -1,0 +1,109 @@
+/* Section1 Styles */
+#section1 {
+  background-color: #E6FFF7 !important;
+  padding: 50px 0;
+}
+
+#section1 img {
+  transition: transform 0.3s ease;
+}
+
+#section1 img:hover {
+  transform: scale(1.05);
+}
+
+#section1 h1 {
+  color: #333333;
+  font-weight: 700;
+}
+
+#section1 .lead {
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#section1 .btn-primary {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #F4A261, #E76F51); /* Gradient màu mật ong đến cam nhạt */
+  border: none;
+  color: #FFFFFF;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#section1 .btn-primary:hover {
+  background: linear-gradient(45deg, #E76F51, #F4A261); /* Đảo gradient khi hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card sản phẩm */
+.product-card {
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-color: #0d6efd;
+}
+
+/* Nút thanh toán chung */
+.payment-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Khoảng cách giữa logo và text */
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.payment-button:hover {
+  background-color: #f8f9fa;
+  border-color: #333;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo trong nút thanh toán */
+.payment-logo {
+  height: 28px; /* Chiều cao chuẩn cho logo */
+  width: auto;
+}
+
+/* Footer của modal thanh toán */
+.modal-footer-custom {
+  display: flex;
+  justify-content: space-between; /* Đẩy nút về 2 phía */
+  width: 100%;
+}
+
+/* Tùy biến màu riêng cho MoMo */
+.payment-button.momo {
+  border-color: #a50064;
+}
+
+.payment-button.momo:hover {
+  background-color: #a50064;
+  color: white;
+}
+
+/* Tùy biến màu riêng cho VNPAY */
+.payment-button.vnpay {
+  border-color: #0066b2;
+}
+
+.payment-button.vnpay:hover {
+  background-color: #0066b2;
+  color: white;
+}

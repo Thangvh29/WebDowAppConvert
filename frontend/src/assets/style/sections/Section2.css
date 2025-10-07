@@ -1,0 +1,19 @@
+/* Hiệu ứng slide-in cho danh sách */
+#section2 .list-group-item {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--i)); /* Tạo độ trễ cho từng mục */
+}
+
+/* Biến --i được thêm qua inline style trong JSX */
+@keyframes slideIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Hover nổi bật hơn */
+#section2 .list-group-item:hover {
+  background-color: #98FF98;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}

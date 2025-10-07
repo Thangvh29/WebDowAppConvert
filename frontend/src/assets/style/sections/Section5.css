@@ -1,0 +1,16 @@
+/* Hiệu ứng rung cho mã QR */
+#section5 img {
+  animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(5px); }
+}
+
+/* Gradient cho tiêu đề */
+#section5 h2 {
+  background: linear-gradient(45deg, #98FF98, #00cc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

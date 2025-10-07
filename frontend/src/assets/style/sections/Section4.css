@@ -1,0 +1,24 @@
+/* Gradient background */
+#section4 {
+  background: linear-gradient(to bottom, #F5F5F5, #E6FFF7);
+}
+
+/* Hiệu ứng fade-in cho bình luận */
+#section4 .comment-item {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Hiệu ứng hover cho form */
+#section4 .comment-form {
+  transition: box-shadow 0.3s ease;
+}
+
+#section4 .comment-form:hover {
+  box-shadow: 0 0 10px rgba(152, 255, 152, 0.5);
+}

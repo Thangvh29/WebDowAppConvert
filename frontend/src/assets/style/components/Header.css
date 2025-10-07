@@ -1,0 +1,53 @@
+/* Gradient động cho nền */
+.navbar {
+  background: linear-gradient(45deg, #FFFFFF, #E6FFF7, #98FF98) !important;
+  background-size: 200% 200%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hiệu ứng underline khi hover */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #98FF98;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hiệu ứng sticky */
+.navbar.scrolled {
+  background: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng logo */
+.navbar-brand img {
+  animation: spin 0.5s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
